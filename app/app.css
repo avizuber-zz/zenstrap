@@ -114,6 +114,58 @@ h2.panel-identifier {
   background: rgba(255, 255, 255, 0.89);
   width:100%;
 }
+
+.panel-sidenav-wrapper {
+  position: fixed;
+  right: 0;
+  background: #fff;
+  top: 54px;
+  bottom: 0;
+}
+ul.panel-sidenav {
+  padding-left:0px;
+}
+ul.panel-sidenav li{
+  list-style:none;
+  padding:4px 6px;
+  height: 45px;
+  width: 45px;
+  border-bottom:1px solid #e3e3e3;
+  text-align: center;
+  line-height: 2.5;
+}
+
+.panel-widget {
+  border-bottom: 1px solid #e3e3e3;
+  padding: 10px 0px;
+}
+
+h3.panel-widget-header {
+  font-weight:100;
+}
+
+ul.panel-widget-list {
+  padding-left:0px;
+}
+
+ul.panel-widget-list li{
+  padding:10px;
+  background:#f2f2f2;
+  box-shadow:0px 1px 2px rgba(0, 0, 0, 0.11);
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+.panel-right-side {
+  max-height: 500px;
+  overflow: auto;
+  position:fixed;
+}
+
+.aside .aside-dialog .aside-body {
+  position: relative;
+  padding: 20px 50px 20px 20px;
+}
 .sp-header .btn-toolbar .btn-group, .btn-toolbar .input-group {
   float:none;
 }
@@ -122,8 +174,10 @@ h2.panel-identifier {
 }
 .display-tablet {
     display:none;
-  }
-
+}
+li.form-icon {
+  display:none;
+}
 @media (max-width:768px) {
   .hidden-tablet {
     display:none;
@@ -134,4 +188,22 @@ h2.panel-identifier {
   div.sp-widget div:nth-child(1) {
     display:none;
   }
+}
+
+@media (max-width:990px) {
+   .panel-right-side {
+        height: 100%;
+        max-height: none;
+        overflow: hidden;
+        position:relative;
+      }
+   .sp-form-fixed-footer {
+      position: relative;
+    }
+    .card-white {
+      margin-bottom: 0px;
+    }
+    li.form-icon {
+      display:block;
+    }
 }
