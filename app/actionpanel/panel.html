@@ -1,0 +1,119 @@
+<!-- Super Panel Concept -->
+<!-- Super Panel Fixed Header -->
+<div class="sp-header" ng-class="panelWidth">
+	<div class="row">
+		<div class="col-md-12 text-right">
+			<div class="btn-toolbar" role="toolbar">
+				<div class="btn-group">
+					<button type="button" class="btn btn-default" ng-click="previous()">
+						<i class="fa fa-arrow-left"></i> 
+						<span class="display-tablet"> Previous </span>
+					</button>
+					<button type="button" class="btn btn-default" ng-click="next()">
+						<i class="fa fa-arrow-right"></i>
+						<span class="display-tablet"> Next </span>
+					</button>
+				</div>
+				<div class="btn-group">
+					<button type="button" class="btn btn-default btn-danger-text" ng-click="$hide()">
+						<i class="fa fa-close"></i>
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- END Super Panel Fixed Header -->
+<!-- Super Panel Body -->
+<div class="sp-body">
+	<div class="col-md-8">
+		<div class="card-white">
+			<div class="header">
+				<div class="row">
+					<div class="col-md-7">
+						<h2 class="panel-identifier">Chuck Norris</h2>
+					</div>
+					<div class="col-md-5 text-right">
+						<a href class="btn btn-sm btn-default"><i class="fa fa-flag"></i> Follow</a>
+						<a href="" class="btn btn-sm btn-danger"><i class="fa fa-trash"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12 sp-form-body">
+					<form role="form">
+						<div class="form-group">
+							<label>First Name</label>
+							<input type="text" class="form-control" placeholder="First Name" value="Chuck">
+						</div>
+						<div class="form-group">
+							<label>Last Name</label>
+							<input type="text" class="form-control" placeholder="Last Name" value="Norris">
+						</div>
+						<div class="form-group">
+							<label>Position</label>
+							<input type="text" class="form-control" placeholder="Position" value="The Man">
+						</div>					
+						<div class="form-group">
+							<label>Email</label>
+							<input type="email" class="form-control" placeholder="Email" value="chuck@universe.com">
+						</div>					
+						<div class="form-group">
+							<label>Alias</label>
+							<input type="text" class="form-control" placeholder="Alias" value="Chuck Norris">
+						</div>					
+						<div class="form-group">
+							<label>Favorite Color</label>
+							<input type="text" class="form-control" placeholder="Favorite Color" value="Yes">
+						</div>					
+						<div class="form-group">
+							<label>Favorite Food</label>
+							<input type="text" class="form-control" placeholder="Favorite Food" value="No">
+						</div>
+					</form>
+				</div>
+			</div>
+			<div class="sp-form-fixed-footer">
+				<a href class="btn btn-primary"><i class="fa fa-plus"></i> Save Chuck Norris </a>
+				|
+				<a href class="btn btn-danger" ng-click="$hide()">Cancel</a>
+			</div>
+		</div>
+	</div>
+	<div class="col-md-4">
+		<div class="card-white">
+			<tabset vertical="true">
+				<tab>
+					<tab-heading>
+						<i class="fa fa-check"></i> Tasks
+					</tab-heading>
+					 A crazy task widget!
+				</tab>
+				<tab>
+					<tab-heading>
+						<i class="fa fa-calendar"></i> Events
+					</tab-heading>
+					 A crazy events widget!
+				</tab>
+				<tab>
+					<tab-heading>
+						<i class="fa fa-link"></i> Linked
+					</tab-heading>
+					 A crazy link widget!
+				</tab>
+				<tab>
+					<tab-heading>
+						<i class="fa fa-comments"></i> Activity
+					</tab-heading>
+					 A crazy activity widget!
+				</tab>
+				<tab>
+					<tab-heading>
+						<i class="fa fa-paperclip"></i> Files
+					</tab-heading>
+					 A crazy paperclip widget!
+				</tab>
+			</tabset>
+		</div>
+	</div>
+</div>
